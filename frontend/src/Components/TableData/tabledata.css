@@ -1,0 +1,44 @@
+.table-container{
+    width: 100%;
+    perspective: 1000px; /* Adding perspective for 3D effect */
+}
+
+.table{
+    border: 2px solid ;
+    border-collapse: collapse;
+    width: 50%;
+   
+
+table th,td{
+    border: 1px solid rgb(126, 123, 123);
+    border-radius: 0.5rem;
+    font-size: large;
+}
+    
+}
+tr:nth-child(even) {
+    background-color: #c9c6c6;
+  }
+  td{
+    text-align: center;
+  }
+  th{
+    background-color: #c9c6c6;
+    border-radius: 0.5rem;
+    font-size: large;
+  }
+
+  tr {
+    transition: transform 0.3s; /* Smooth transition for the transform effect */
+  }
+
+  tr:hover {
+    transform: translateZ(15px); /* Move row slightly towards z-axis on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adding shadow for more depth */
+  }
+  button{
+    padding: 5px;
+    margin: 5px;
+    
+  }
+  
